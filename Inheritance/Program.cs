@@ -28,12 +28,28 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var eagle = new Bird();
+            eagle.WingSpan = 7;
+            eagle.SizeOfBrood = 3;
+            eagle.NumOfLegs = 2;
+            eagle.IsLiving = true;
 
+            Console.WriteLine($"The Eagle has a wingspan of {eagle.WingSpan} and has an average broodsize of {eagle.SizeOfBrood}.");
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
              *  
              * Creatively display the class member values 
              */
+            var gecko = new Reptile();
+            gecko.NativeRegion = "south-asian Afghanistan";
+            gecko.Regeneration = true;
+            gecko.TypeOfBirth = "egg";
+            string regen = "regenerate";
+            if(gecko.Regeneration == false)
+            {
+                regen = "not regenerate";
+            }
+            Console.WriteLine($"the gecko is birthed from an {gecko.TypeOfBirth} and can {regen}.");
         }
     }
 }
